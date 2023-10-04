@@ -33,6 +33,7 @@ https://www.figma.com/file/ZW3fkVzsNUAvaryteSM4Ug/God_vision_architecture?type=d
 4) docker run --rm -it -e RTSP_PROTOCOLS=tcp -p 8554:8554 -p 1935:1935 aler9/rtsp-simple-server    - Установка и запуск в контейнере rtsp сервера. (Позже будет включен в docker compose.)
 5) Postgresql - Позже будет включен в docker compose.
 6) Rabbitmq - Позже будет включен в docker compose.
+7) Ftp - подразумевается разворачивание и настройка на стороне пользователя
 
 Backend-django:
 Включает в себя набор api для отправки тасок в Rabbitmq, а также веб-сервер. Добавление ftp сервера, данных для rtsp-сервера, данных камер и заведение пользователей будет производиться ТОЛЬКО из админки django! Также django будет производить поддержку и взаимодействие веб личного кабинета.
